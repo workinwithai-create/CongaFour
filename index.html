@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CongaFour — live conga pocket desk</title>
+  <meta name="description" content="Four-bar live conga and bongo pocket. Stiff kit vs live hand drums. FluidR3 chairs, WAV and MIDI export." />
+  <meta name="theme-color" content="#120e0b" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Workin' With AI · The Forge Stack</p>
+      <div class="hero">
+        <div>
+          <h1>CongaFour</h1>
+          <p class="lead">Four-bar live conga pocket. AI kits land every hit on the grid. Session hands talk. Hear stiff vs pocket, then bounce WAV, MIDI, and a punch list.</p>
+        </div>
+        <p class="status" id="status">Seating chairs…</p>
+      </div>
+    </header>
+    <section>
+      <p class="eyebrow">Groove</p>
+      <div class="row" id="grooves"></div>
+    </section>
+    <section>
+      <p class="eyebrow">Pocket recipe</p>
+      <div class="row recipes" id="recipes"></div>
+    </section>
+    <section>
+      <div class="grid-head">
+        <p class="eyebrow">Hand grid · 4 bars</p>
+        <p class="status" id="modeLabel">stopped</p>
+      </div>
+      <div class="bars" id="bars"></div>
+    </section>
+    <div class="dock">
+      <button id="playA">A · Stiff kit</button>
+      <button id="playB" class="primary">B · Pocket</button>
+      <button id="stop" class="ghost">Stop</button>
+      <button id="wav" class="paper">WAV pocket</button>
+    </div>
+    <p class="hint">Keys: 1 stiff · 2 pocket · space stop. Audio never leaves this tab.</p>
+    <div class="split">
+      <section>
+        <p class="eyebrow">Chairs</p>
+        <div class="row" id="chairs"></div>
+        <label class="drop">
+          <input id="loop" type="file" accept="audio/*,.wav,.mp3,.ogg" />
+          <span id="loopLabel">Drop a 4-bar loop. We seat the hands on top.</span>
+        </label>
+      </section>
+      <section class="paper-card">
+        <div class="paper-head">
+          <h2>Punch list</h2>
+          <div class="paper-actions">
+            <button id="copy" class="ghost">Copy</button>
+            <button id="midi" class="ghost">MIDI</button>
+          </div>
+        </div>
+        <pre id="punch"></pre>
+      </section>
+    </div>
+    <footer>
+      <p>One-time $19 lifetime. Sell on Lemon Squeezy; Gumroad as the producer mirror. Recurring billing stays with AuraMix / MixForge / Forge Pass.</p>
+      <p>Distinct from WalkEight (walking bass), GhostEight (kit ghosts), NeedThree (shaker), and RiseEight (energy rise). Live chairs. No oscillators.</p>
+    </footer>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
