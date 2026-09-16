@@ -1,0 +1,9 @@
+{
+  "name": "congafour",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Four-bar live conga and bongo pocket desk for bedroom producers and AI-music finishers",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
